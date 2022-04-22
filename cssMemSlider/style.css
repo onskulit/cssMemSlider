@@ -10,13 +10,14 @@ body {
 
 .slider {
     margin: 30px auto;
-    width: 80%;
+    width: 65%;
     overflow: hidden;
 }
 
 .slides {
     width: 400%;
     display: flex;
+    align-items: center;
 }
 
 .slide {
@@ -65,10 +66,18 @@ input[name="radio"] {
     display: none;
 }
 
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
 .bar {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 10px;
+    width: 1rem;
+    height: 1rem;
     background: transparent;
     cursor: pointer;
     background-color: rgb(170, 170, 252);
@@ -98,9 +107,9 @@ input[name="radio"] {
     margin-left: -75%;
 }
 
-#radio-1:checked~.info label[for="radio-1"],
-#radio-2:checked~.info label[for="radio-2"],
-#radio-3:checked~.info label[for="radio-3"],
-#radio-4:checked~.info label[for="radio-4"] {
+#radio-1:checked~.info label[for="radio-1"] .bar,
+#radio-2:checked~.info label[for="radio-2"] .bar,
+#radio-3:checked~.info label[for="radio-3"] .bar,
+#radio-4:checked~.info label[for="radio-4"] .bar {
     background: transparent;
 }
