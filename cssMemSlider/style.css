@@ -113,3 +113,18 @@ label {
 #radio-4:checked~.info label[for="radio-4"] .bar {
     background: transparent;
 }
+
+@media (max-width: 900px) {
+    .slider {
+        width: 90%;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .titles-slider {
+        width: 100%;
+    }
+}
