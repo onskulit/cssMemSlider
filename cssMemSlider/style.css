@@ -114,7 +114,7 @@ label {
     background: transparent;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
     .slider {
         width: 90%;
     }
